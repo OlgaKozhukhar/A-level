@@ -2,7 +2,7 @@ package ua.kozhukhar.hw3;
 
 import java.util.Scanner;
 
-public class HW3Task2 {
+public class Task2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
