@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package ua.kozhukhar.hw1;
 
 public class HWTask4 {
 
