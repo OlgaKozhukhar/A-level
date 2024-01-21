@@ -1,6 +1,6 @@
 package ua.kozhukhar.hw1;
 
-public class HWTask4 {
+public class Task4 {
 
     public static void main(String[] args) {
         // Задание 4: Вывести меньшее по модулю из трех вещественных чисел
