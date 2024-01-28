@@ -17,17 +17,6 @@ public class Task3 {
 
     }
 
-    // Метод для удаления пробелов из строки
-    private static String removeSpaces(String input) {
-        return input.replaceAll("\\s", "");
-    }
-
-    // Метод для определения, является ли строка палиндромом
-    private static boolean isPalindrome(String input) {
-        String reversed = new StringBuilder(input).reverse().toString();
-        return input.equalsIgnoreCase(reversed);
-    }
-
     // Метод для подсчета количества слов в строке
     private static int countWords(String input) {
         String[] words = input.split("\\s+");
