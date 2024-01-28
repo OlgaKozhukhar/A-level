@@ -20,7 +20,7 @@ public class Task2 {
         }
 
         for (int i = 0; i < triangle.length; i++) {
-            for (int j = 0; i < triangle[i].length; j++) {
+            //Ошибка происходит из-за того, и внутренний цикл использовал i вместо j для индексации.
                 System.out.print(triangle[i][j] + " ");
             }
             System.out.println();
