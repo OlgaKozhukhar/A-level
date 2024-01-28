@@ -9,7 +9,7 @@ public class Task3 {
 
         // Задание 3: Подсчитать количество слов в строке
         System.out.println("\nЗадание 3:");
-        System.out.print("Введите строку с словами: ");
+        System.out.println("Введите строку с словами: ");
         String wordsString = scanner.nextLine();
 
         int wordCount = countWords(wordsString);
