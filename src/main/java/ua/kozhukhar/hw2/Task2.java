@@ -1,6 +1,6 @@
-import java.util.Scanner;
+package ua.kozhukhar.hw2;
 
-public class Hw2Task2 {
+public class Task2 {
 
     public static void main(String[] args) {
 
