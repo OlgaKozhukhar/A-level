@@ -5,16 +5,15 @@ import java.util.Random;
 public class Task2 {
 
     public static class Vector3D {
-        private double x, y, z;
+        private double x;
+        private double y;
+        private double z;
 
-        // Конструктор с параметрами в виде списка координат [x, y, z]
-        public Vector3D(double[] coordinates) {
-            if (coordinates.length != 3) {
-                throw new IllegalArgumentException("Вектор должен иметь три координаты");
-            }
-            this.x = coordinates[0];
-            this.y = coordinates[1];
-            this.z = coordinates[2];
+        // Конструктор с параметрами x, y, z
+        public Vector3D(double x, double y, double z) {
+            this.x = x;
+            this.y = y;
+            this.z = z;
         }
 
         // Метод для вычисления длины вектора
@@ -28,7 +27,7 @@ public class Task2 {
             double yResult = z * otherVector.x - x * otherVector.z;
             double zResult = x * otherVector.y - y * otherVector.x;
 
-            return new Vector3D(new double[]{xResult, yResult, zResult});
+            return new Vector3D(xResult, yResult, zResult);
         }
 
         // Метод для вычисления косинуса угла между векторами
@@ -46,12 +45,12 @@ public class Task2 {
 
         // Метод для сложения векторов
         public Vector3D add(Vector3D otherVector) {
-            return new Vector3D(new double[]{x + otherVector.x, y + otherVector.y, z + otherVector.z});
+            return new Vector3D(x + otherVector.x, y + otherVector.y, z + otherVector.z);
         }
 
         // Метод для вычитания векторов
         public Vector3D subtract(Vector3D otherVector) {
-            return new Vector3D(new double[]{x - otherVector.x, y - otherVector.y, z - otherVector.z});
+            return new Vector3D(x - otherVector.x, y - otherVector.y, z - otherVector.z);
         }
     }
 
@@ -61,8 +60,10 @@ public class Task2 {
         Random random = new Random();
 
         for (int i = 0; i < N; i++) {
-            double[] coordinates = {random.nextDouble(), random.nextDouble(), random.nextDouble()};
-            vectors[i] = new Vector3D(coordinates);
+            double x = random.nextDouble();
+            double y = random.nextDouble();
+            double z =random.nextDouble();
+            vectors[i] = new Vector3D (x, y, z);
         }
 
         return vectors;
@@ -70,8 +71,8 @@ public class Task2 {
 
     // Пример использования класса
     public static void main(String[] args) {
-        Vector3D vector1 = new Vector3D(new double[]{1, 2, 3});
-        Vector3D vector2 = new Vector3D(new double[]{4, 5, 6});
+        Vector3D vector1 = new Vector3D(1, 2, 3);
+        Vector3D vector2 = new Vector3D(4, 5, 6);
 
         // Вычисление длины вектора
         double lengthVector1 = vector1.length();
