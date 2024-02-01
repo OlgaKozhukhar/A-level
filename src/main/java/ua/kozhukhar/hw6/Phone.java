@@ -76,7 +76,7 @@ public class Phone {
         defaultPhone.setWeight(0.4);  // Пример установки веса
 
         // Вызов методов для каждого объекта
-ra        System.out.println("Phone 1:");
+        System.out.println("Phone 1:");
         phone1.receiveCall("David");
         System.out.println("Phone Number: " + phone1.getNumber());
 
