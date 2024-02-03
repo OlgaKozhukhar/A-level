@@ -11,10 +11,10 @@ public class Task2 {
         triangle[4] = new int[5];
 
         for (int i = 0; i < triangle.length; i++) {
-           //Убрана лишняя часть кода- System.out.println(triangle.length + "!");
-            //Убрана лишняя часть кода-System.out.println("i = " + i);
+            System.out.println(triangle.length + "!");
+            System.out.println("i = " + i);
             for (int j = 0; j < triangle[i].length; j++) {
-                //Убрана лишняя часть кода-System.out.println(triangle[i].length);
+                System.out.println(triangle[i].length);
                 triangle[i][j] = 0;
             }
         }
