@@ -1,0 +1,17 @@
+
+target/
+
+.mvn/
+db/
+mvnw
+mvnw.cmd
+output.csv
+/src/main/resources/static/uploads/
+/src/main/resources/secret.properties
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
