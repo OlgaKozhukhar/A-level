@@ -66,6 +66,15 @@ public class Phone {
         Phone phone2 = new Phone("775-65-47", "Nokia3110");
         Phone defaultPhone = new Phone();
 
+        // Заполнение полей для phone2
+        phone2.setNumber("775-65-47");
+        phone2.setModel("Nokia3110");
+
+        // Заполнение полей для defaultPhone
+        defaultPhone.setNumber("defaultNumber");
+        defaultPhone.setModel("defaultModel");
+        defaultPhone.setWeight(0.4);  // Пример установки веса
+
         // Вызов методов для каждого объекта
         System.out.println("Phone 1:");
         phone1.receiveCall("David");
